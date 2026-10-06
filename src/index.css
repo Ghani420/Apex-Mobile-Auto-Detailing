@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --gold-primary: #d4af37;
+    --gold-light: #f5df88;
+    --gold-dark: #996515;
+    --bg-dark: #050505;
+    --bg-card: #0c0c0e;
+    --bg-card-hover: #141418;
+  }
+
+  body {
+    background-color: #050505;
+    color: #e5e5e5;
+    font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: 'Cinzel', 'Montserrat', serif;
+    letter-spacing: 0.03em;
+  }
+}
+
+/* Custom Metallic Gold Utilities */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #fff2c5 0%, #dfb755 35%, #b8860b 70%, #d4af37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gold-muted {
+  color: #c5a059;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #dfb755 0%, #d4af37 50%, #996515 100%);
+}
+
+.bg-gold-glow {
+  box-shadow: 0 0 40px -10px rgba(212, 175, 55, 0.25);
+}
+
+.border-gold-subtle {
+  border-color: rgba(212, 175, 55, 0.2);
+}
+
+.border-gold-hover:hover {
+  border-color: rgba(212, 175, 55, 0.55);
+}
+
+/* Subtle carbon/grid texture for automotive feeling */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #080808;
+}
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}

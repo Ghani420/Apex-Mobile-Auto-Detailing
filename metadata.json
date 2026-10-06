@@ -1,0 +1,6 @@
+{
+  "name": "Apex Mobile Auto Detailing",
+  "description": "Premium mobile auto detailing delivered directly to your doorstep. Specializing in master paint correction, ceramic coatings, deep interior restoration, and concierge automotive care.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
