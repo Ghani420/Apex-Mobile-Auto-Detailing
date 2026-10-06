@@ -28,7 +28,7 @@ export const PromoCouponModal: React.FC<PromoCouponModalProps> = ({
 
   return (
     <div
-      className="fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-4 overflow-y-auto"
+      className="fixed inset-0 z-50 bg-black/45 flex items-center justify-center p-4 overflow-y-auto"
       onClick={onClose}
       role="dialog"
       aria-modal="true"
@@ -80,8 +80,26 @@ export const PromoCouponModal: React.FC<PromoCouponModalProps> = ({
             10% OFF
           </h2>
 
+          {/* Discounted Price Display */}
+          <div className="mt-4 flex flex-col items-center">
+            <div className="inline-flex items-center justify-center gap-3 px-4 py-2 rounded-md bg-[#14141b] border border-[#d4af37]/35 shadow-inner">
+              <span className="font-mono text-lg sm:text-xl font-semibold text-neutral-400 line-through decoration-neutral-400/90">
+                $229
+              </span>
+              <span className="text-[#d4af37] font-bold text-base sm:text-lg" aria-hidden="true">
+                &rarr;
+              </span>
+              <span className="font-mono text-2xl sm:text-3xl font-extrabold text-gold-gradient">
+                $206.10
+              </span>
+            </div>
+            <span className="mt-1.5 text-[11px] font-semibold uppercase tracking-widest text-[#d4af37]">
+              Your Price
+            </span>
+          </div>
+
           {/* Subheadline */}
-          <p className="font-heading text-sm sm:text-base font-bold text-white uppercase tracking-widest mt-3">
+          <p className="font-heading text-sm sm:text-base font-bold text-white uppercase tracking-widest mt-4">
             PROFESSIONAL MOBILE AUTO DETAILING
           </p>
 

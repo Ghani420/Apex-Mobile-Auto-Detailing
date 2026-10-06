@@ -71,6 +71,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
   const getInitialFormData = (serviceName: string) => ({
     full_name: '',
     email: '',
+    phone: '',
     year: '2024',
     make_model: '',
     service: serviceName,
@@ -745,7 +746,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                 </div>
               </div>
 
-              {/* Step 4: Customer Details & Special Requests (No Phone Field) */}
+              {/* Step 4: Customer Details & Special Requests */}
               <div className="pt-4 border-t border-neutral-800/80">
                 <h3 className="text-xs font-bold uppercase tracking-widest text-[#d4af37] mb-4 flex items-center gap-2">
                   <User className="w-4 h-4" />
@@ -783,7 +784,22 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                     />
                   </div>
 
-                  <div className="sm:col-span-2">
+                  <div>
+                    <label className="block text-xs font-medium text-neutral-300 mb-1.5">
+                      Phone Number
+                    </label>
+                    <input
+                      type="tel"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleInputChange}
+                      placeholder="e.g. (323) 555-0123"
+                      className="w-full px-3.5 py-2.5 rounded-sm bg-[#141418] border border-neutral-800 focus:border-[#d4af37] focus:outline-none text-white text-xs"
+                      required
+                    />
+                  </div>
+
+                  <div>
                     <label className="block text-xs font-medium text-neutral-300 mb-1.5">
                       Additional Notes / Specific Concerns (Optional)
                     </label>
