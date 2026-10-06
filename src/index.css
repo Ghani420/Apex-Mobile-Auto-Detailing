@@ -1,6 +1,12 @@
 @import "tailwindcss";
 
 @layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
   :root {
     --gold-primary: #d4af37;
     --gold-light: #f5df88;
@@ -10,16 +16,37 @@
     --bg-card-hover: #141418;
   }
 
+  html,
   body {
+    width: 100%;
+    max-width: 100%;
     background-color: #050505;
     color: #e5e5e5;
     font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
-    overflow-x: hidden;
+    overflow-x: clip;
   }
 
-  h1, h2, h3, .font-heading {
+  #root {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  img,
+  picture,
+  video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  h1,
+  h2,
+  h3,
+  .font-heading {
     font-family: 'Cinzel', 'Montserrat', serif;
     letter-spacing: 0.03em;
+    overflow-wrap: break-word;
   }
 }
 

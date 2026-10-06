@@ -43,9 +43,9 @@ export const LegalPage: React.FC<LegalPageProps> = ({ page, onBackHome }) => {
   }, [page]);
 
   return (
-    <section className="py-16 sm:py-24 bg-[#050505] relative min-h-[80vh]">
+    <section className="py-16 sm:py-24 bg-[#050505] relative min-h-[80vh] overflow-hidden">
       {/* Subtle Ambient Gold Lighting */}
-      <div className="absolute top-24 left-1/2 -translate-x-1/2 w-[500px] h-[300px] bg-[#d4af37]/5 rounded-full blur-[150px] pointer-events-none" />
+      <div className="absolute top-24 left-1/2 -translate-x-1/2 w-full max-w-[500px] h-[300px] bg-[#d4af37]/5 rounded-full blur-[150px] pointer-events-none" />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Back to Home Button */}

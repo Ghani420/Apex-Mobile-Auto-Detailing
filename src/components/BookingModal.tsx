@@ -252,7 +252,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
 
   return (
     <div
-      className="fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-2 sm:p-4 md:p-6"
+      className="fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-3 sm:p-4 md:p-6 overflow-x-hidden"
       onClick={onClose}
       role="dialog"
       aria-modal="true"
@@ -260,20 +260,20 @@ export const BookingModal: React.FC<BookingModalProps> = ({
     >
       {/* Modal Container */}
       <div
-        className="relative w-full max-w-3xl max-h-[94vh] sm:max-h-[90vh] overflow-y-auto rounded-xl bg-[#0c0c0f] border border-[#d4af37]/50 shadow-[0_25px_70px_rgba(0,0,0,0.95),0_0_35px_rgba(212,175,55,0.2)] text-neutral-100 scroll-smooth"
+        className="relative w-full max-w-3xl max-h-[92vh] sm:max-h-[90vh] overflow-y-auto overflow-x-hidden rounded-xl bg-[#0c0c0f] border border-[#d4af37]/50 shadow-[0_25px_70px_rgba(0,0,0,0.95),0_0_35px_rgba(212,175,55,0.2)] text-neutral-100 scroll-smooth"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Sticky Top Bar with Close Button */}
-        <div className="sticky top-0 z-30 flex items-center justify-between px-5 sm:px-8 py-4 bg-[#0c0c0f]/95 backdrop-blur-md border-b border-neutral-800/90">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#111114] border border-[#d4af37]/30 text-[#d4af37] text-[11px] font-semibold uppercase tracking-widest">
-            <Calendar className="w-3.5 h-3.5" />
-            <span>Direct Concierge Booking</span>
+        <div className="sticky top-0 z-30 flex items-center justify-between gap-2 px-4 sm:px-8 py-3.5 sm:py-4 bg-[#0c0c0f]/95 backdrop-blur-md border-b border-neutral-800/90">
+          <div className="inline-flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3 py-1 rounded-full bg-[#111114] border border-[#d4af37]/30 text-[#d4af37] text-[10px] sm:text-[11px] font-semibold uppercase tracking-widest min-w-0">
+            <Calendar className="w-3.5 h-3.5 flex-shrink-0" />
+            <span className="truncate">Direct Concierge Booking</span>
           </div>
 
           <button
             type="button"
             onClick={onClose}
-            className="w-9 h-9 rounded-full bg-[#16161d] hover:bg-[#d4af37] text-neutral-300 hover:text-black border border-[#d4af37]/40 hover:border-transparent flex items-center justify-center transition-all shadow-md"
+            className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-[#16161d] hover:bg-[#d4af37] text-neutral-300 hover:text-black border border-[#d4af37]/40 hover:border-transparent flex items-center justify-center transition-all shadow-md flex-shrink-0"
             aria-label="Close Booking Popup"
           >
             <X className="w-4 h-4" />
@@ -281,7 +281,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
         </div>
 
         {/* Modal Body */}
-        <div className="p-5 sm:p-8">
+        <div className="p-4 sm:p-8">
           {/* Header Description */}
           <div className="text-center max-w-2xl mx-auto mb-8">
             <h2

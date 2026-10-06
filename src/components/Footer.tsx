@@ -13,9 +13,9 @@ export const Footer: React.FC<FooterProps> = ({ onBookClick, onNavigateLegal }) 
   };
 
   return (
-    <footer className="bg-[#050505] text-neutral-400 border-t border-[#d4af37]/30 relative pt-16 pb-12 overflow-hidden">
+    <footer className="bg-[#050505] text-neutral-400 border-t border-[#d4af37]/30 relative pt-16 pb-24 md:pb-12 overflow-hidden">
       {/* Background ambient lighting */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-[#d4af37]/5 rounded-full blur-[160px] pointer-events-none" />
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[600px] h-[300px] bg-[#d4af37]/5 rounded-full blur-[160px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         

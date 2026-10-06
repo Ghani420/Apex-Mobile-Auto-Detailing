@@ -71,7 +71,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#050505] text-neutral-100 flex flex-col font-sans selection:bg-[#d4af37] selection:text-black">
+    <div className="min-h-screen w-full max-w-full overflow-x-hidden bg-[#050505] text-neutral-100 flex flex-col font-sans selection:bg-[#d4af37] selection:text-black">
       {/* Navigation */}
       <Navbar onBookClick={() => openBookingModalWithSelection()} />
 

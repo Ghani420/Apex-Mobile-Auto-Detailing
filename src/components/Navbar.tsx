@@ -36,14 +36,14 @@ export const Navbar: React.FC<NavbarProps> = ({ onBookClick }) => {
           : 'bg-gradient-to-b from-[#0a0a0a]/90 to-transparent border-b border-white/5 py-4'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-2 min-w-0">
         {/* Brand Logo */}
         <a
           href="#home"
-          className="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#d4af37]"
+          className="flex items-center gap-2.5 sm:gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#d4af37] min-w-0"
           aria-label="Apex Mobile Auto Detailing Home"
         >
-          <div className="relative w-12 h-12 rounded-full overflow-hidden border border-[#d4af37]/60 group-hover:border-[#d4af37] transition-all shadow-[0_0_15px_rgba(212,175,55,0.25)] flex-shrink-0">
+          <div className="relative w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden border border-[#d4af37]/60 group-hover:border-[#d4af37] transition-all shadow-[0_0_15px_rgba(212,175,55,0.25)] flex-shrink-0">
             <img
               src={BUSINESS_INFO.logoUrl}
               alt="Apex Mobile Auto Detailing Official Logo"
@@ -51,11 +51,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onBookClick }) => {
               referrerPolicy="no-referrer"
             />
           </div>
-          <div className="flex flex-col">
-            <span className="font-heading text-lg font-bold tracking-wider text-white group-hover:text-gold-gradient transition-colors leading-tight">
+          <div className="flex flex-col min-w-0">
+            <span className="font-heading text-base sm:text-lg font-bold tracking-wider text-white group-hover:text-gold-gradient transition-colors leading-tight truncate">
               APEX
             </span>
-            <span className="text-[10px] tracking-[0.25em] text-[#d4af37] font-semibold uppercase">
+            <span className="text-[9px] sm:text-[10px] tracking-[0.16em] sm:tracking-[0.25em] text-[#d4af37] font-semibold uppercase truncate">
               Mobile Auto Detailing
             </span>
           </div>

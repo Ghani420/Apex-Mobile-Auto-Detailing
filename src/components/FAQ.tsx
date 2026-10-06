@@ -10,11 +10,11 @@ export const FAQ: React.FC = () => {
   };
 
   return (
-    <section id="faq" className="py-24 bg-[#08080a] relative border-t border-neutral-900">
+    <section id="faq" className="py-16 sm:py-24 bg-[#08080a] relative border-t border-neutral-900 overflow-hidden">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 sm:mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#111114] border border-[#d4af37]/30 text-[#d4af37] text-xs font-semibold uppercase tracking-widest mb-3">
             <HelpCircle className="w-3.5 h-3.5" />
             <span>Frequently Asked Questions</span>

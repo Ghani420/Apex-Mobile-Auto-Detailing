@@ -4,22 +4,22 @@ import { BUSINESS_INFO } from '../data/content';
 
 export const About: React.FC = () => {
   return (
-    <section id="about" className="py-24 bg-[#08080a] relative border-t border-neutral-900">
+    <section id="about" className="py-16 sm:py-24 bg-[#08080a] relative border-t border-neutral-900 overflow-hidden">
       {/* Ambient background glow */}
-      <div className="absolute top-1/2 left-1/4 w-[500px] h-[500px] bg-[#d4af37]/5 rounded-full blur-[150px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/4 w-full max-w-[500px] h-[500px] bg-[#d4af37]/5 rounded-full blur-[150px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
           
           {/* Left Column: Brand Emblem & Visual Proof */}
           <div className="lg:col-span-5 flex flex-col items-center">
-            <div className="relative group w-full max-w-md">
-              <div className="absolute -inset-2 bg-gradient-to-tr from-[#d4af37]/30 to-[#996515]/30 rounded-2xl blur-xl opacity-60 group-hover:opacity-100 transition duration-700" />
+            <div className="relative group w-full max-w-md min-w-0">
+              <div className="absolute inset-0 sm:-inset-2 bg-gradient-to-tr from-[#d4af37]/30 to-[#996515]/30 rounded-2xl blur-xl opacity-60 group-hover:opacity-100 transition duration-700 pointer-events-none" />
               
-              <div className="relative p-8 rounded-xl bg-gradient-to-b from-[#111116] to-[#08080a] border border-[#d4af37]/40 shadow-2xl flex flex-col items-center text-center">
+              <div className="relative p-6 sm:p-8 rounded-xl bg-gradient-to-b from-[#111116] to-[#08080a] border border-[#d4af37]/40 shadow-2xl flex flex-col items-center text-center">
                 
                 {/* Official Brand Logo Emblem */}
-                <div className="w-48 h-48 rounded-full border-2 border-[#d4af37] p-1.5 shadow-[0_0_35px_rgba(212,175,55,0.35)] mb-6 bg-black">
+                <div className="w-36 h-36 sm:w-48 sm:h-48 rounded-full border-2 border-[#d4af37] p-1.5 shadow-[0_0_35px_rgba(212,175,55,0.35)] mb-6 bg-black">
                   <img
                     src={BUSINESS_INFO.logoUrl}
                     alt="Apex Mobile Auto Detailing Brand Seal"
@@ -28,7 +28,7 @@ export const About: React.FC = () => {
                   />
                 </div>
 
-                <h3 className="font-heading text-2xl font-bold text-white uppercase tracking-wider mb-1">
+                <h3 className="font-heading text-xl sm:text-2xl font-bold text-white uppercase tracking-wider mb-1">
                   {BUSINESS_INFO.name}
                 </h3>
                 <p className="text-xs text-[#d4af37] font-semibold tracking-widest uppercase mb-4">
@@ -42,7 +42,7 @@ export const About: React.FC = () => {
                 </p>
 
                 {/* Micro guarantees */}
-                <div className="mt-6 pt-6 border-t border-neutral-800 grid grid-cols-2 gap-4 w-full text-left text-xs">
+                <div className="mt-6 pt-6 border-t border-neutral-800 grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 w-full text-left text-xs">
                   <div className="flex items-center gap-2 text-neutral-300">
                     <CheckCircle2 className="w-4 h-4 text-[#d4af37] flex-shrink-0" />
                     <span>Customer Provides Water &amp; Electricity</span>
