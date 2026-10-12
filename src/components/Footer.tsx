@@ -99,7 +99,7 @@ export const Footer: React.FC<FooterProps> = ({ onBookClick, onNavigateLegal }) 
             
             <div className="space-y-2.5">
               <a
-                href="https://www.instagram.com/apex_mobile_autodetailing?stkn=Y2VndG16bmU3dTcy&utm_source=qr"
+                href="https://ig.me/m/apex_mobile_autodetailing"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram DM - Message Us on Instagram"

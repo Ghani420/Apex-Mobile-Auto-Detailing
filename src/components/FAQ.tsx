@@ -83,7 +83,7 @@ export const FAQ: React.FC = () => {
             </p>
           </div>
           <a
-            href="https://www.instagram.com/apex_mobile_autodetailing?stkn=Y2VndG16bmU3dTcy&utm_source=qr"
+            href="https://ig.me/m/apex_mobile_autodetailing"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto justify-center px-5 py-2.5 rounded-sm bg-[#18181f] hover:bg-[#d4af37] text-white hover:text-black border border-[#d4af37]/40 text-xs font-semibold tracking-wider uppercase transition-all flex items-center gap-2 flex-shrink-0"

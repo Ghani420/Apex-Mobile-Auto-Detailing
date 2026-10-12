@@ -77,7 +77,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onBookClick }) => {
         {/* Desktop CTAs */}
         <div className="hidden sm:flex items-center gap-3">
           <a
-            href="https://www.instagram.com/apex_mobile_autodetailing?stkn=Y2VndG16bmU3dTcy&utm_source=qr"
+            href="https://ig.me/m/apex_mobile_autodetailing"
             target="_blank"
             rel="noopener noreferrer"
             className="px-3.5 py-2 rounded-sm border border-[#333] hover:border-[#d4af37]/60 text-xs font-semibold tracking-wider uppercase text-neutral-200 hover:text-[#d4af37] transition-all flex items-center gap-1.5"

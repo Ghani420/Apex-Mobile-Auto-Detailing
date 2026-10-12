@@ -2,7 +2,7 @@ import React from 'react';
 import { Calendar, MapPin, Instagram, Mail, Shield, CheckCircle2, ChevronRight } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/content';
 
-const INSTAGRAM_URL = 'https://www.instagram.com/apex_mobile_autodetailing?stkn=Y2VndG16bmU3dTcy&utm_source=qr';
+const INSTAGRAM_URL = 'https://ig.me/m/apex_mobile_autodetailing';
 
 interface BookingFormProps {
   onBookClick: () => void;

@@ -138,7 +138,7 @@ export default function App() {
       {/* Sticky Mobile Conversion Bar (Only on small screens) */}
       <div className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#08080a]/95 backdrop-blur-md border-t border-[#d4af37]/30 p-2.5 flex items-center gap-2 shadow-[0_-5px_20px_rgba(0,0,0,0.8)]">
         <a
-          href="https://www.instagram.com/apex_mobile_autodetailing?stkn=Y2VndG16bmU3dTcy&utm_source=qr"
+          href="https://ig.me/m/apex_mobile_autodetailing"
           target="_blank"
           rel="noopener noreferrer"
           className="flex-1 py-3 rounded-sm bg-[#16161c] border border-neutral-700 text-neutral-200 font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-1.5"
