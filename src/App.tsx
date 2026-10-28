@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Instagram, Calendar } from 'lucide-react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
@@ -29,6 +29,32 @@ export default function App() {
     if (hash === '#privacy') return 'privacy';
     return 'home';
   });
+
+  const isFirstRender = useRef(true);
+
+  // Track SPA client-side route changes in GA4 without duplicate tracking on initial load
+  useEffect(() => {
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
+    }
+
+    if (typeof window !== 'undefined' && typeof (window as any).gtag === 'function') {
+      const pagePath = currentPage === 'home' ? '/' : `/#${currentPage}`;
+      const pageTitle =
+        currentPage === 'terms'
+          ? 'Terms & Conditions | Apex Mobile Auto Detailing'
+          : currentPage === 'privacy'
+          ? 'Privacy Policy | Apex Mobile Auto Detailing'
+          : 'Apex Mobile Auto Detailing | Premium Mobile Detailing Delivered To You';
+
+      (window as any).gtag('event', 'page_view', {
+        page_title: pageTitle,
+        page_location: window.location.href,
+        page_path: pagePath,
+      });
+    }
+  }, [currentPage]);
 
   useEffect(() => {
     const handleHashChange = () => {
