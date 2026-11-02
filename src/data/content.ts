@@ -97,7 +97,6 @@ export const SERVICES: ServiceItem[] = [
     description: "Thorough interior cleaning designed to refresh the cabin and leave your vehicle looking and feeling clean.",
     duration: "1–1.5 Hours",
     startingPrice: "$189",
-    popular: true,
     benefits: [
       "Vacuum All Carpets & Seats",
       "Wipe Down All Interior Surfaces",
@@ -111,12 +110,13 @@ export const SERVICES: ServiceItem[] = [
   },
   {
     id: "exterior-interior",
-    name: "Exterior Interior",
+    name: "Apex Special",
     category: "exterior-interior",
-    tagline: "EXTERIOR INTERIOR",
+    tagline: "APEX SPECIAL",
     description: "Professional exterior and interior detailing designed to leave your vehicle clean, refreshed, and well-maintained inside and out.",
     duration: "1–1.5 Hours",
     startingPrice: "$229",
+    popular: true,
     benefits: [
       "Complete interior and exterior detailing",
       "Thorough cleaning inside and out",

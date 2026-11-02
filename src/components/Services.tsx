@@ -41,7 +41,7 @@ export const Services: React.FC<ServicesProps> = ({ onSelectService }) => {
               { id: 'all', label: 'ALL SERVICES' },
               { id: 'exterior', label: 'EXTERIOR' },
               { id: 'interior', label: 'INTERIOR' },
-              { id: 'exterior-interior', label: 'EXTERIOR INTERIOR' },
+              { id: 'exterior-interior', label: 'APEX SPECIAL' },
             ].map(tab => (
               <button
                 key={tab.id}

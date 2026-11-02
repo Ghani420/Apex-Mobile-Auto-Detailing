@@ -25,7 +25,7 @@ emailjs.init({
   publicKey: EMAILJS_PUBLIC_KEY,
 });
 
-const BOOKING_SERVICES = ['Exterior', 'Interior', 'Exterior Interior'] as const;
+const BOOKING_SERVICES = ['Exterior', 'Interior', 'Apex Special'] as const;
 const HOURS = Array.from({ length: 12 }, (_, i) => String(i + 1).padStart(2, '0'));
 const MINUTES = Array.from({ length: 60 }, (_, i) => String(i).padStart(2, '0'));
 const PERIODS = ['AM', 'PM'] as const;

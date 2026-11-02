@@ -169,7 +169,7 @@ export const LegalPage: React.FC<LegalPageProps> = ({ page, onBackHome }) => {
                     9. Payment / Pricing
                   </h2>
                   <p>
-                    No upfront payment is collected on our website when submitting a booking request. Service pricing is based on the selected service (Exterior, Interior, or Exterior Interior). Payment is due upon completion of the detailing service.
+                    No upfront payment is collected on our website when submitting a booking request. Service pricing is based on the selected service (Exterior, Interior, or Apex Special). Payment is due upon completion of the detailing service.
                   </p>
                 </div>
 
@@ -268,7 +268,7 @@ export const LegalPage: React.FC<LegalPageProps> = ({ page, onBackHome }) => {
                     3. Vehicle and Service Information
                   </h2>
                   <p>
-                    Our booking form collects your Vehicle Year, Make &amp; Model, Selected Service (Exterior, Interior, or Exterior Interior), and any optional Additional Notes or Specific Concerns you choose to share about your vehicle.
+                    Our booking form collects your Vehicle Year, Make &amp; Model, Selected Service (Exterior, Interior, or Apex Special), and any optional Additional Notes or Specific Concerns you choose to share about your vehicle.
                   </p>
                 </div>
 
