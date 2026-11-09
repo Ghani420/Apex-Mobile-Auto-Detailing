@@ -28,11 +28,11 @@ export const Services: React.FC<ServicesProps> = ({ onSelectService }) => {
             <span>Professional Mobile Auto Detailing</span>
           </div>
           <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight uppercase">
-            Mobile Detailing Services In Los Angeles
+            Mobile Detailing Services
           </h2>
           <div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mt-4 mb-4" />
           <p className="text-neutral-300 text-sm sm:text-base leading-relaxed">
-            Professional mobile car detailing delivered directly to your driveway, home, or office across Los Angeles, California.
+            Professional mobile car detailing delivered directly to your driveway, home, or office.
           </p>
 
           {/* Interactive Category Filter Tabs */}
@@ -73,7 +73,7 @@ export const Services: React.FC<ServicesProps> = ({ onSelectService }) => {
                 <div className="relative h-48 w-full overflow-hidden bg-neutral-900">
                   <img
                     src={service.image}
-                    alt={`${service.name} - Professional Mobile Car Detailing in Los Angeles, CA`}
+                    alt={`${service.name} - Professional Mobile Car Detailing`}
                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
                     referrerPolicy="no-referrer"
                   />

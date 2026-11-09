@@ -48,22 +48,13 @@ export interface FAQItem {
 export const BUSINESS_INFO = {
   name: "Apex Mobile Auto Detailing",
   shortName: "Apex Detailing",
-  tagline: "Professional Mobile Auto Detailing in Los Angeles, CA",
+  tagline: "Professional Mobile Auto Detailing",
   heroHeadline: "MOBILE AUTO DETAILING. DELIVERED TO YOUR DRIVEWAY.",
-  heroSubheadline: "Experience showroom perfection without leaving your home or office. We bring professional mobile car detailing equipment directly to you across Los Angeles, California.",
+  heroSubheadline: "Experience showroom perfection without leaving your home or office. We bring professional mobile car detailing equipment directly to you.",
   phone: "+1 (555) 273-9338",
   phoneFormatted: "(555) APEX-DET",
   email: "apexmobileautodetailing07@gmail.com",
-  serviceCity: "Los Angeles",
-  serviceState: "CA",
-  serviceAreas: [
-    "Downtown Los Angeles & Financial District",
-    "Beverly Hills & Westside Enclaves",
-    "Santa Monica & Venice",
-    "Hollywood & West Hollywood",
-    "Pasadena & Glendale",
-    "San Fernando Valley & Encino"
-  ],
+  serviceAddress: "2958 21rd Ave Street, Los Angeles, CA, USA",
   hours: "Monday – Saturday: 7:30 AM – 6:30 PM | Sunday: By Appointment",
   logoUrl: "/apex_brand_logo_1790608426509.jpg",
   heroImageUrl: "/hero_detailing_luxury_1790608441789.jpg",
@@ -75,7 +66,7 @@ export const SERVICES: ServiceItem[] = [
     name: "Exterior",
     category: "exterior",
     tagline: "EXTERIOR",
-    description: "Professional exterior car detailing in Los Angeles focused on hand washing, paint decontamination, buffer waxing, and restoring a clean, glossy finish.",
+    description: "Professional exterior car detailing focused on hand washing, paint decontamination, buffer waxing, and restoring a clean, glossy finish.",
     duration: "1–1.5 Hours",
     startingPrice: "$169",
     benefits: [
@@ -94,7 +85,7 @@ export const SERVICES: ServiceItem[] = [
     name: "Interior",
     category: "interior",
     tagline: "INTERIOR",
-    description: "Comprehensive interior car detailing in Los Angeles designed to deep-clean carpets and upholstery, condition leather, remove pet hair, and refresh your cabin.",
+    description: "Comprehensive interior car detailing designed to deep-clean carpets and upholstery, condition leather, remove pet hair, and refresh your cabin.",
     duration: "1–1.5 Hours",
     startingPrice: "$189",
     benefits: [
@@ -113,7 +104,7 @@ export const SERVICES: ServiceItem[] = [
     name: "Apex Special",
     category: "exterior-interior",
     tagline: "APEX SPECIAL",
-    description: "Our premier exterior and interior mobile auto detailing package in Los Angeles, providing complete vehicle care inside and out right at your driveway.",
+    description: "Our premier exterior and interior mobile auto detailing package, providing complete vehicle care inside and out right at your driveway.",
     duration: "1–1.5 Hours",
     startingPrice: "$229",
     popular: true,
@@ -227,8 +218,8 @@ export const FAQS: FAQItem[] = [
   {
     id: "faq-2",
     category: "Logistics",
-    question: "Do you come to my location in Los Angeles?",
-    answer: "Yes, 100%. We provide mobile auto detailing throughout Los Angeles, California and surrounding neighborhoods. Whether you are at your home, driveway, apartment parking structure, or office, we arrive fully prepared to detail your vehicle on-site."
+    question: "Do you come directly to my location?",
+    answer: "Yes, 100%. We provide professional mobile auto detailing delivered directly to you. Whether you are at your home, driveway, apartment parking structure, or office, we arrive fully prepared to detail your vehicle on-site."
   },
   {
     id: "faq-3",

@@ -22,7 +22,7 @@ export const Gallery: React.FC<GalleryProps> = () => {
           </h2>
           <div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mt-4 mb-4" />
           <p className="text-neutral-300 text-sm sm:text-base leading-relaxed">
-            See the transformation of professional mobile car detailing in Los Angeles — from dusty, road-worn paint and interior to a pristine, showroom-quality finish.
+            See the transformation of professional mobile car detailing — from dusty, road-worn paint and interior to a pristine, showroom-quality finish.
           </p>
         </div>
 
@@ -32,7 +32,7 @@ export const Gallery: React.FC<GalleryProps> = () => {
             beforeImage="/ChatGPT Image Sep 28, 2026, 09_46_17 PM.png"
             afterImage="/ChatGPT Image Sep 28, 2026, 09_47_19 PM.png"
             title="BEFORE &amp; AFTER"
-            subtitle="Inspect the results of professional mobile auto detailing in Los Angeles, CA."
+            subtitle="Inspect the results of professional mobile auto detailing."
           />
         </div>
 

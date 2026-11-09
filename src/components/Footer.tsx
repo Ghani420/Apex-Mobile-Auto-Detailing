@@ -28,7 +28,7 @@ export const Footer: React.FC<FooterProps> = ({ onBookClick, onNavigateLegal }) 
               <div className="w-14 h-14 rounded-full border-2 border-[#d4af37] overflow-hidden shadow-[0_0_15px_rgba(212,175,55,0.3)] flex-shrink-0 bg-black">
                 <img
                   src={BUSINESS_INFO.logoUrl}
-                  alt="Apex Mobile Auto Detailing official brand logo - Los Angeles, CA"
+                  alt="Apex Mobile Auto Detailing official brand logo"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                 />
@@ -44,7 +44,7 @@ export const Footer: React.FC<FooterProps> = ({ onBookClick, onNavigateLegal }) 
             </div>
 
             <p className="text-xs text-neutral-400 leading-relaxed max-w-sm">
-              The premier mobile automotive detailing service in Los Angeles, CA. Delivering artisan detailing and professional interior and exterior care directly to your driveway.
+              The premier mobile automotive detailing service. Delivering artisan detailing and professional interior and exterior care directly to your driveway.
             </p>
 
             <div className="pt-2 flex items-center">

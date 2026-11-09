@@ -24,25 +24,25 @@ export const Hero: React.FC<HeroProps> = ({ onBookClick, onExploreServices }) =>
             {/* Subtle Brand Tagline */}
             <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-[#141416] border border-[#d4af37]/30 text-[#d4af37] text-xs font-semibold uppercase tracking-widest">
               <Sparkles className="w-3.5 h-3.5 text-[#f5df88]" />
-              <span>Professional Mobile Auto Detailing • Los Angeles, CA</span>
+              <span>Professional Mobile Auto Detailing • Delivered To You</span>
             </div>
 
             {/* Main Headline */}
             <h1 className="font-heading text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.1] uppercase">
               Mobile Auto Detailing{' '}
               <span className="block text-gold-gradient mt-1">
-                In Los Angeles, CA
+                Delivered To Your Driveway
               </span>
             </h1>
 
             {/* Subheadline */}
             <p className="text-base sm:text-lg text-neutral-300 max-w-2xl font-normal leading-relaxed">
-              Experience premier mobile car detailing in Los Angeles delivered directly to your driveway, residence, or workplace. We bring professional detailing equipment to you for exterior hand wash, buffer wax, and deep interior car detailing across Los Angeles.
+              Experience premier mobile car detailing delivered directly to your driveway, residence, or workplace. We bring professional detailing equipment to you for exterior hand wash, buffer wax, and deep interior car detailing.
             </p>
 
             {/* Value / Trust Line */}
             <div className="flex flex-wrap items-center gap-y-2 gap-x-4 text-xs font-medium text-neutral-400 border-l-2 border-[#d4af37] pl-3 py-0.5">
-              <span className="text-neutral-200">Mobile Car Detailing Los Angeles</span>
+              <span className="text-neutral-200">Mobile Car Detailing</span>
               <span className="text-[#d4af37]" aria-hidden="true">&bull;</span>
               <span className="text-neutral-200">Interior &amp; Exterior Detailing</span>
               <span className="text-[#d4af37]" aria-hidden="true">&bull;</span>
@@ -111,7 +111,7 @@ export const Hero: React.FC<HeroProps> = ({ onBookClick, onExploreServices }) =>
                 <div className="relative aspect-[16/10] overflow-hidden">
                   <img
                     src={BUSINESS_INFO.heroImageUrl}
-                    alt="Professional mobile auto detailing in Los Angeles - Exterior hand wash and luxury vehicle care"
+                    alt="Professional mobile auto detailing - Exterior hand wash and luxury vehicle care"
                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                     referrerPolicy="no-referrer"
                   />

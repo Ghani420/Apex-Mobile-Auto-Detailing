@@ -22,7 +22,7 @@ export const About: React.FC = () => {
                 <div className="w-36 h-36 sm:w-48 sm:h-48 rounded-full border-2 border-[#d4af37] p-1.5 shadow-[0_0_35px_rgba(212,175,55,0.35)] mb-6 bg-black">
                   <img
                     src={BUSINESS_INFO.logoUrl}
-                    alt="Apex Mobile Auto Detailing seal - Premier mobile car detailing company in Los Angeles"
+                    alt="Apex Mobile Auto Detailing seal - Premier mobile car detailing company"
                     className="w-full h-full object-cover rounded-full"
                     referrerPolicy="no-referrer"
                   />
@@ -69,13 +69,13 @@ export const About: React.FC = () => {
           <div className="lg:col-span-7 space-y-6">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#111114] border border-[#d4af37]/30 text-[#d4af37] text-xs font-semibold uppercase tracking-widest">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>Mobile Detailing in Los Angeles</span>
+              <span>The Apex Standard</span>
             </div>
 
             <h2 className="font-heading text-3xl sm:text-4xl font-extrabold text-white tracking-tight uppercase leading-tight">
               Studio Perfection.{' '}
               <span className="block text-gold-gradient">
-                Delivered Across Los Angeles.
+                Delivered Directly To You.
               </span>
             </h2>
 
@@ -84,7 +84,7 @@ export const About: React.FC = () => {
                 Historically, achieving true show-car gloss meant dropping your vehicle off at an expensive detailing studio for several days, arranging rides, and disrupting your entire routine.
               </p>
               <p>
-                <strong className="text-white font-semibold">Apex Mobile Auto Detailing</strong> provides professional mobile car detailing across Los Angeles, California. Discerning vehicle owners receive the highest level of automotive craftsmanship, exterior wash, and interior care delivered directly to their driveway.
+                <strong className="text-white font-semibold">Apex Mobile Auto Detailing</strong> provides professional mobile car detailing with showroom-grade perfection. Discerning vehicle owners receive the highest level of automotive craftsmanship, exterior wash, and interior care delivered directly to their driveway.
               </p>
               <p>
                 Customer provides water and electricity. Apex Mobile Auto Detailing provides the professional detailing service and equipment.

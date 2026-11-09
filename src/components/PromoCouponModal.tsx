@@ -60,7 +60,7 @@ export const PromoCouponModal: React.FC<PromoCouponModalProps> = ({
           <div className="w-16 h-16 rounded-full border-2 border-[#d4af37] p-0.5 shadow-[0_0_25px_rgba(212,175,55,0.35)] mb-5 bg-black">
             <img
               src={BUSINESS_INFO.logoUrl}
-              alt="Apex Mobile Auto Detailing promotional offer emblem - Los Angeles"
+              alt="Apex Mobile Auto Detailing promotional offer emblem"
               className="w-full h-full object-cover rounded-full"
               referrerPolicy="no-referrer"
             />

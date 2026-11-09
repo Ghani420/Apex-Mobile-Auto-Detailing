@@ -96,7 +96,7 @@ export const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
         {/* AFTER Image (Full background) */}
         <img
           src={afterImage}
-          alt="After mobile auto detailing in Los Angeles - Clean, polished and detailed vehicle finish"
+          alt="After mobile auto detailing - Clean, polished and detailed vehicle finish"
           className="absolute inset-0 w-full h-full object-cover pointer-events-none"
           referrerPolicy="no-referrer"
         />

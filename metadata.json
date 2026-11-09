@@ -1,6 +1,6 @@
 {
   "name": "Apex Mobile Auto Detailing",
-  "description": "Professional mobile auto detailing in Los Angeles, CA. Delivering premier exterior hand washing, buffer waxing, deep interior car detailing, and full vehicle care to your driveway.",
+  "description": "Professional mobile auto detailing. Delivering premier exterior hand washing, buffer waxing, deep interior car detailing, and full vehicle care to your driveway.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

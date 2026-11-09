@@ -17,9 +17,9 @@ import {
 } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/content';
 
-const EMAILJS_SERVICE_ID = 'service_cnrmdoi';
-const EMAILJS_TEMPLATE_ID = 'template_bgnllff';
-const EMAILJS_PUBLIC_KEY = 'hjb28ge_cIUHwzNpt';
+const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID || 'service_cnrmdoi';
+const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'template_bgnllff';
+const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'hjb28ge_cIUHwzNpt';
 
 emailjs.init({
   publicKey: EMAILJS_PUBLIC_KEY,
@@ -78,7 +78,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
     preferred_date: '',
     arrival_time: '10 : 00 AM',
     address: '',
-    city: BUSINESS_INFO.serviceCity,
+    city: '',
     zip: '',
     notes: '',
   });
@@ -725,7 +725,8 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                       name="city"
                       value={formData.city}
                       onChange={handleInputChange}
-                      className="w-full px-3.5 py-2.5 rounded-sm bg-[#141418] border border-neutral-800 focus:border-[#d4af37] focus:outline-none text-white text-xs"
+                      placeholder="City"
+                      className="w-full px-3.5 py-2.5 rounded-sm bg-[#141418] border border-neutral-800 focus:border-[#d4af37] focus:outline-none text-white text-xs placeholder:text-neutral-500"
                       required
                     />
                   </div>
