@@ -24,29 +24,29 @@ export const Hero: React.FC<HeroProps> = ({ onBookClick, onExploreServices }) =>
             {/* Subtle Brand Tagline */}
             <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-[#141416] border border-[#d4af37]/30 text-[#d4af37] text-xs font-semibold uppercase tracking-widest">
               <Sparkles className="w-3.5 h-3.5 text-[#f5df88]" />
-              <span>Bespoke Concierge Detailing</span>
+              <span>Professional Mobile Auto Detailing • Los Angeles, CA</span>
             </div>
 
             {/* Main Headline */}
             <h1 className="font-heading text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.1] uppercase">
-              Premium Detailing.{' '}
+              Mobile Auto Detailing{' '}
               <span className="block text-gold-gradient mt-1">
-                Delivered To Your Driveway.
+                In Los Angeles, CA
               </span>
             </h1>
 
             {/* Subheadline */}
             <p className="text-base sm:text-lg text-neutral-300 max-w-2xl font-normal leading-relaxed">
-              Enjoy professional mobile auto detailing at your home or office. We bring our detailing equipment directly to you. Water and electricity are provided by the customer, while our detailing service focuses on delivering a thorough, professional clean and refreshed finish.
+              Experience premier mobile car detailing in Los Angeles delivered directly to your driveway, residence, or workplace. We bring professional detailing equipment to you for exterior hand wash, buffer wax, and deep interior car detailing across Los Angeles.
             </p>
 
             {/* Value / Trust Line */}
             <div className="flex flex-wrap items-center gap-y-2 gap-x-4 text-xs font-medium text-neutral-400 border-l-2 border-[#d4af37] pl-3 py-0.5">
-              <span className="text-neutral-200">100% Mobile & Self-Contained</span>
+              <span className="text-neutral-200">Mobile Car Detailing Los Angeles</span>
               <span className="text-[#d4af37]" aria-hidden="true">&bull;</span>
-              <span className="text-neutral-200">Professional Exterior Care</span>
+              <span className="text-neutral-200">Interior &amp; Exterior Detailing</span>
               <span className="text-[#d4af37]" aria-hidden="true">&bull;</span>
-              <span className="text-neutral-200">Thorough Interior Care</span>
+              <span className="text-neutral-200">We Come To You</span>
             </div>
 
             {/* CTAs */}
@@ -111,7 +111,7 @@ export const Hero: React.FC<HeroProps> = ({ onBookClick, onExploreServices }) =>
                 <div className="relative aspect-[16/10] overflow-hidden">
                   <img
                     src={BUSINESS_INFO.heroImageUrl}
-                    alt="Precision auto detailing showcase on luxury sports car"
+                    alt="Professional mobile auto detailing in Los Angeles - Exterior hand wash and luxury vehicle care"
                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                     referrerPolicy="no-referrer"
                   />
@@ -121,7 +121,7 @@ export const Hero: React.FC<HeroProps> = ({ onBookClick, onExploreServices }) =>
                   <div className="absolute top-3 right-3 sm:top-4 sm:right-4 flex items-center gap-2 bg-[#050505]/85 backdrop-blur-md px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-full border border-[#d4af37]/50 shadow-lg">
                     <img
                       src={BUSINESS_INFO.logoUrl}
-                      alt="Apex Official Logo Emblem"
+                      alt="Apex Mobile Auto Detailing official brand logo emblem"
                       className="w-7 h-7 sm:w-8 sm:h-8 rounded-full border border-[#d4af37]"
                       referrerPolicy="no-referrer"
                     />
@@ -148,7 +148,7 @@ export const Hero: React.FC<HeroProps> = ({ onBookClick, onExploreServices }) =>
                     <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-full border-2 border-[#d4af37] overflow-hidden shadow-[0_0_12px_rgba(212,175,55,0.3)] flex-shrink-0">
                       <img
                         src={BUSINESS_INFO.logoUrl}
-                        alt="Apex Detailing Badge"
+                        alt="Apex Mobile Auto Detailing quality craftsmanship badge"
                         className="w-full h-full object-cover"
                         referrerPolicy="no-referrer"
                       />

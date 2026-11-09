@@ -26,7 +26,7 @@ export const BookingForm: React.FC<BookingFormProps> = ({ onBookClick }) => {
           </h2>
           <div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mt-4 mb-4" />
           <p className="text-neutral-300 text-sm sm:text-base leading-relaxed">
-            Book your preferred date and time. We’ll come to your location with everything needed for a professional detailing service.
+            Book your preferred date and time. We’ll come to your location across Los Angeles with professional mobile auto detailing equipment.
           </p>
         </div>
 
@@ -39,7 +39,7 @@ export const BookingForm: React.FC<BookingFormProps> = ({ onBookClick }) => {
                 <div className="w-10 h-10 rounded-full border border-[#d4af37] overflow-hidden flex-shrink-0">
                   <img
                     src={BUSINESS_INFO.logoUrl}
-                    alt="Apex Detailing"
+                    alt="Apex Mobile Auto Detailing logo - Professional mobile car detailing in Los Angeles"
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"
                   />

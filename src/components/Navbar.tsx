@@ -46,7 +46,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onBookClick }) => {
           <div className="relative w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden border border-[#d4af37]/60 group-hover:border-[#d4af37] transition-all shadow-[0_0_15px_rgba(212,175,55,0.25)] flex-shrink-0">
             <img
               src={BUSINESS_INFO.logoUrl}
-              alt="Apex Mobile Auto Detailing Official Logo"
+              alt="Apex Mobile Auto Detailing logo - Mobile car detailing in Los Angeles"
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
             />

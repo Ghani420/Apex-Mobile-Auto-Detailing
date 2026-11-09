@@ -18,11 +18,11 @@ export const Gallery: React.FC<GalleryProps> = () => {
             <span>Master Results</span>
           </div>
           <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight uppercase">
-            BEFORE &amp; AFTER
+            Before &amp; After Detailing Results
           </h2>
           <div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mt-4 mb-4" />
           <p className="text-neutral-300 text-sm sm:text-base leading-relaxed">
-            See the difference professional detailing can make — from dusty and dirty to clean, fresh and detailed.
+            See the transformation of professional mobile car detailing in Los Angeles — from dusty, road-worn paint and interior to a pristine, showroom-quality finish.
           </p>
         </div>
 
@@ -32,7 +32,7 @@ export const Gallery: React.FC<GalleryProps> = () => {
             beforeImage="/ChatGPT Image Sep 28, 2026, 09_46_17 PM.png"
             afterImage="/ChatGPT Image Sep 28, 2026, 09_47_19 PM.png"
             title="BEFORE &amp; AFTER"
-            subtitle="See the difference professional detailing can make — from dusty and dirty to clean, fresh and detailed."
+            subtitle="Inspect the results of professional mobile auto detailing in Los Angeles, CA."
           />
         </div>
 

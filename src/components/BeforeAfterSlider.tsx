@@ -96,7 +96,7 @@ export const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
         {/* AFTER Image (Full background) */}
         <img
           src={afterImage}
-          alt="AFTER - Clean & Detailed"
+          alt="After mobile auto detailing in Los Angeles - Clean, polished and detailed vehicle finish"
           className="absolute inset-0 w-full h-full object-cover pointer-events-none"
           referrerPolicy="no-referrer"
         />
@@ -108,7 +108,7 @@ export const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
         >
           <img
             src={beforeImage}
-            alt="BEFORE - Dusty & Dirty"
+            alt="Before mobile auto detailing - Dusty and dirty vehicle prior to detailing service"
             className="absolute top-0 left-0 h-full object-cover max-w-none pointer-events-none"
             style={{ width: containerWidth ? `${containerWidth}px` : '100%' }}
             referrerPolicy="no-referrer"

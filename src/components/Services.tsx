@@ -25,14 +25,14 @@ export const Services: React.FC<ServicesProps> = ({ onSelectService }) => {
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#111114] border border-[#d4af37]/30 text-[#d4af37] text-xs font-semibold uppercase tracking-widest mb-3">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>Mobile Auto Detailing</span>
+            <span>Professional Mobile Auto Detailing</span>
           </div>
           <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight uppercase">
-            Bespoke Mobile Services
+            Mobile Detailing Services In Los Angeles
           </h2>
           <div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mt-4 mb-4" />
           <p className="text-neutral-300 text-sm sm:text-base leading-relaxed">
-            Professional mobile detailing delivered directly to your driveway or workplace, tailored to your vehicle's specific condition.
+            Professional mobile car detailing delivered directly to your driveway, home, or office across Los Angeles, California.
           </p>
 
           {/* Interactive Category Filter Tabs */}
@@ -73,7 +73,7 @@ export const Services: React.FC<ServicesProps> = ({ onSelectService }) => {
                 <div className="relative h-48 w-full overflow-hidden bg-neutral-900">
                   <img
                     src={service.image}
-                    alt={service.name}
+                    alt={`${service.name} - Professional Mobile Car Detailing in Los Angeles, CA`}
                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
                     referrerPolicy="no-referrer"
                   />
@@ -171,9 +171,9 @@ export const Services: React.FC<ServicesProps> = ({ onSelectService }) => {
         {/* Custom Consultation Strip */}
         <div className="mt-14 p-6 sm:p-8 rounded-sm bg-[#0c0c0f] border border-[#d4af37]/30 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="space-y-1 text-center md:text-left">
-            <h4 className="font-heading text-lg font-bold text-white uppercase tracking-wider">
+            <h3 className="font-heading text-lg font-bold text-white uppercase tracking-wider">
               Need A Bespoke Detailing Package?
-            </h4>
+            </h3>
             <p className="text-xs sm:text-sm text-neutral-400 max-w-2xl">
               We detail multi-car exotic collections, vintage restorations, and corporate fleets with custom schedules.
             </p>

@@ -46,7 +46,7 @@ export default function App() {
           ? 'Terms & Conditions | Apex Mobile Auto Detailing'
           : currentPage === 'privacy'
           ? 'Privacy Policy | Apex Mobile Auto Detailing'
-          : 'Apex Mobile Auto Detailing | Premium Mobile Detailing Delivered To You';
+          : 'Apex Mobile Auto Detailing | Mobile Car Detailing Los Angeles, CA';
 
       (window as any).gtag('event', 'page_view', {
         page_title: pageTitle,
