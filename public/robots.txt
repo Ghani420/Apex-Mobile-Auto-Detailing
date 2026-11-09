@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://apexmobileautodetailing.com/sitemap.xml
+Sitemap: https://apexmobileautodetailing.site/sitemap.xml
