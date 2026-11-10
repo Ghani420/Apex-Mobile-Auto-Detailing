@@ -15,7 +15,7 @@ import React from 'react';
 export const AnimatedPromoCar: React.FC = () => {
   return (
     <div
-      className="w-full relative rounded-lg bg-gradient-to-b from-[#09090d] via-[#0b0b10] to-[#040406] border border-[#d4af37]/35 shadow-[inset_0_2px_15px_rgba(0,0,0,0.85),0_0_25px_rgba(212,175,55,0.15)] overflow-hidden h-36 sm:h-40 flex items-center justify-center my-3.5 select-none"
+      className="w-full relative rounded-lg bg-gradient-to-b from-[#09090d] via-[#0b0b10] to-[#040406] border border-[#d4af37]/35 shadow-[inset_0_2px_15px_rgba(0,0,0,0.85),0_0_25px_rgba(212,175,55,0.15)] overflow-hidden h-32 min-[400px]:h-36 sm:h-40 flex items-center justify-center my-2.5 sm:my-3.5 select-none"
       aria-label="Apex 10% OFF Special Offer Car Animation"
       role="img"
     >
@@ -24,21 +24,22 @@ export const AnimatedPromoCar: React.FC = () => {
       <div className="absolute inset-0 bg-grid-pattern opacity-10 pointer-events-none" />
 
       {/* Road / Runway Platform at the Bottom */}
-      <div className="absolute bottom-0 left-0 right-0 h-6 bg-gradient-to-b from-[#0a0a0e] to-[#020203] border-t border-neutral-800/90 pointer-events-none overflow-hidden">
+      <div className="absolute bottom-0 left-0 right-0 h-5 min-[400px]:h-6 bg-gradient-to-b from-[#0a0a0e] to-[#020203] border-t border-neutral-800/90 pointer-events-none overflow-hidden">
         {/* Subtle Gold Runner Track Line */}
         <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#d4af37]/50 to-transparent" />
         {/* Animated Moving Dashed Road Track Line (stops when car stops) */}
-        <div className="animated-road-track absolute bottom-2 left-0 right-0 h-[1px]" />
+        <div className="animated-road-track absolute bottom-1.5 min-[400px]:bottom-2 left-0 right-0 h-[1px]" />
       </div>
 
       {/* Glossy Road Mirror Reflection Gradient */}
-      <div className="absolute bottom-6 left-0 right-0 h-5 bg-gradient-to-t from-[#d4af37]/10 via-[#d4af37]/2 to-transparent pointer-events-none" />
+      <div className="absolute bottom-5 min-[400px]:bottom-6 left-0 right-0 h-4 min-[400px]:h-5 bg-gradient-to-t from-[#d4af37]/10 via-[#d4af37]/2 to-transparent pointer-events-none" />
 
-      {/* Moving Convoy (Supercar + Tow Cords + 10% OFF Banner) */}
-      <div className="promo-car-convoy absolute top-1/2 left-1/2 w-[340px] sm:w-[375px] h-[95px] sm:h-[105px] flex items-center pointer-events-none">
+      {/* Moving Convoy (Supercar + Tow Cords + 10% OFF Banner) - Fluid Responsive Container */}
+      <div className="promo-car-convoy absolute top-1/2 left-1/2 w-[94%] max-w-[370px] aspect-[375/100] flex items-center pointer-events-none">
         <svg
-          viewBox="0 0 360 100"
-          className="w-full h-full overflow-visible"
+          viewBox="0 0 375 100"
+          className="w-full h-auto max-h-full overflow-visible"
+          preserveAspectRatio="xMidYMid meet"
           xmlns="http://www.w3.org/2000/svg"
         >
           <defs>
@@ -155,13 +156,13 @@ export const AnimatedPromoCar: React.FC = () => {
 
           {/* 1. ROAD CONTACT SHADOW (Directly Under Tires and Banner) */}
           <ellipse cx="270" cy="89" rx="88" ry="4" fill="#000000" opacity="0.88" />
-          <ellipse cx="86" cy="85" rx="72" ry="3" fill="#000000" opacity="0.4" />
+          <ellipse cx="88" cy="85" rx="74" ry="3" fill="#000000" opacity="0.4" />
 
           {/* 2. DUAL GOLD BRAIDED TOW CABLES */}
           <g className="tow-cables">
             {/* Top Braided Gold Cable */}
             <path
-              d="M 160 38 Q 173 45, 186 54"
+              d="M 162 38 Q 174 45, 186 54"
               stroke="url(#apex-gold-metal)"
               strokeWidth="1.6"
               fill="none"
@@ -169,7 +170,7 @@ export const AnimatedPromoCar: React.FC = () => {
             />
             {/* Bottom Braided Gold Cable */}
             <path
-              d="M 160 68 Q 173 66, 186 66"
+              d="M 162 68 Q 174 66, 186 66"
               stroke="url(#apex-gold-metal)"
               strokeWidth="1.6"
               fill="none"
@@ -183,7 +184,7 @@ export const AnimatedPromoCar: React.FC = () => {
           <g className="promo-banner" filter="url(#shadow-filter)">
             {/* Banner Pennant / Flag Outline with Aerodynamic Notch */}
             <path
-              d="M 8 18 L 160 18 L 160 84 L 8 84 L 20 51 Z"
+              d="M 6 18 L 162 18 L 162 84 L 6 84 L 18 51 Z"
               fill="url(#banner-bg-grad)"
               stroke="url(#apex-gold-metal)"
               strokeWidth="2"
@@ -192,7 +193,7 @@ export const AnimatedPromoCar: React.FC = () => {
 
             {/* Inner Gold Stitched Dashed Hairline */}
             <path
-              d="M 14 23 L 154 23 L 154 79 L 14 79 L 24 51 Z"
+              d="M 12 23 L 156 23 L 156 79 L 12 79 L 22 51 Z"
               fill="none"
               stroke="#d4af37"
               strokeWidth="0.75"
@@ -201,14 +202,14 @@ export const AnimatedPromoCar: React.FC = () => {
             />
 
             {/* Right Edge Reinforcement Grommets */}
-            <circle cx="156" cy="38" r="2.8" fill="#0a0a0d" stroke="url(#apex-gold-metal)" strokeWidth="1.2" />
-            <circle cx="156" cy="68" r="2.8" fill="#0a0a0d" stroke="url(#apex-gold-metal)" strokeWidth="1.2" />
+            <circle cx="158" cy="38" r="2.8" fill="#0a0a0d" stroke="url(#apex-gold-metal)" strokeWidth="1.2" />
+            <circle cx="158" cy="68" r="2.8" fill="#0a0a0d" stroke="url(#apex-gold-metal)" strokeWidth="1.2" />
 
             {/* Top Pill: "★ APEX EXCLUSIVE ★" */}
             <rect
-              x="36"
-              y="22.5"
-              width="96"
+              x="40"
+              y="21.5"
+              width="100"
               height="11"
               rx="2.5"
               fill="rgba(212, 175, 55, 0.16)"
@@ -216,25 +217,25 @@ export const AnimatedPromoCar: React.FC = () => {
               strokeWidth="0.75"
             />
             <text
-              x="84"
-              y="30.5"
+              x="90"
+              y="29.5"
               textAnchor="middle"
               fill="#f5df88"
               fontSize="6.8"
               fontWeight="800"
-              letterSpacing="1.4"
+              letterSpacing="1.3"
               fontFamily="'Cinzel', 'Montserrat', serif"
             >
               ★ APEX EXCLUSIVE ★
             </text>
 
-            {/* Main Headline: "10% OFF" in Bold Gold Typography */}
+            {/* Main Headline: "10% OFF" in Bold Gold Typography - Centered & Highly Legible */}
             <text
-              x="84"
-              y="57"
+              x="90"
+              y="58"
               textAnchor="middle"
               fill="url(#apex-gold-metal)"
-              fontSize="26"
+              fontSize="28"
               fontWeight="900"
               letterSpacing="1.2"
               fontFamily="'Cinzel', 'Montserrat', serif"
@@ -245,8 +246,8 @@ export const AnimatedPromoCar: React.FC = () => {
 
             {/* Bottom Label: "SPECIAL PROMO VOUCHER" */}
             <text
-              x="84"
-              y="73"
+              x="90"
+              y="73.5"
               textAnchor="middle"
               fill="#d4af37"
               fontSize="6.5"
@@ -258,15 +259,15 @@ export const AnimatedPromoCar: React.FC = () => {
             </text>
 
             {/* Flanking Decorative Gold Sparkle Icons on Banner */}
-            <polygon points="28,51 31,48 34,51 31,54" fill="url(#apex-gold-metal)" />
-            <polygon points="138,51 141,48 144,51 141,54" fill="url(#apex-gold-metal)" />
+            <polygon points="26,51 29,48 32,51 29,54" fill="url(#apex-gold-metal)" />
+            <polygon points="148,51 151,48 154,51 151,54" fill="url(#apex-gold-metal)" />
           </g>
 
           {/* 4. MODERN 2025–2026 LUXURY SUPERCAR (Leading the Convoy) */}
           <g className="supercar-2026" filter="url(#shadow-filter)">
             {/* Futuristic Headlight Beam (Projected Forward on Road) */}
             <polygon
-              points="356,68 378,57 378,88 356,76"
+              points="356,68 375,57 375,88 356,76"
               fill="url(#headlight-beam-grad)"
               className="headlight-beam-glow"
             />
@@ -511,7 +512,7 @@ export const AnimatedPromoCar: React.FC = () => {
 
         @keyframes carConvoyDrive {
           0% {
-            transform: translate(-50%, -46%) translateX(-140%);
+            transform: translate(-50%, -46%) translateX(-150%);
             opacity: 0;
           }
           2% {
@@ -526,15 +527,15 @@ export const AnimatedPromoCar: React.FC = () => {
             opacity: 1;
           }
           86% {
-            transform: translate(-50%, -46%) translateX(140%);
+            transform: translate(-50%, -46%) translateX(150%);
             opacity: 1;
           }
           87% {
-            transform: translate(-50%, -46%) translateX(140%);
+            transform: translate(-50%, -46%) translateX(150%);
             opacity: 0;
           }
           100% {
-            transform: translate(-50%, -46%) translateX(-140%);
+            transform: translate(-50%, -46%) translateX(-150%);
             opacity: 0;
           }
         }
@@ -697,3 +698,4 @@ export const AnimatedPromoCar: React.FC = () => {
     </div>
   );
 };
+

@@ -29,7 +29,7 @@ export const PromoCouponModal: React.FC<PromoCouponModalProps> = ({
 
   return (
     <div
-      className="fixed inset-0 z-50 bg-black/45 flex items-center justify-center p-4 overflow-y-auto"
+      className="fixed inset-0 z-50 bg-black/55 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4 overflow-y-auto"
       onClick={onClose}
       role="dialog"
       aria-modal="true"
@@ -37,7 +37,7 @@ export const PromoCouponModal: React.FC<PromoCouponModalProps> = ({
     >
       {/* Modal Card */}
       <div
-        className="relative w-full max-w-md rounded-xl bg-gradient-to-b from-[#111116] via-[#0b0b0f] to-[#07070a] border border-[#d4af37]/60 shadow-[0_25px_70px_rgba(0,0,0,0.95),0_0_45px_rgba(212,175,55,0.22)] text-neutral-100 overflow-hidden my-auto"
+        className="relative w-full max-w-[440px] rounded-xl bg-gradient-to-b from-[#111116] via-[#0b0b0f] to-[#07070a] border border-[#d4af37]/60 shadow-[0_25px_70px_rgba(0,0,0,0.95),0_0_45px_rgba(212,175,55,0.22)] text-neutral-100 overflow-hidden my-auto max-h-[94dvh] flex flex-col"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Subtle Ambient Gold Top Glow */}
@@ -51,14 +51,14 @@ export const PromoCouponModal: React.FC<PromoCouponModalProps> = ({
           type="button"
           onClick={onClose}
           aria-label="Close Promotional Offer"
-          className="absolute top-4 right-4 z-20 w-8 h-8 rounded-full bg-[#16161d] hover:bg-[#d4af37] text-neutral-300 hover:text-black border border-[#d4af37]/40 hover:border-transparent flex items-center justify-center transition-all"
+          className="absolute top-3.5 right-3.5 sm:top-4 sm:right-4 z-20 w-8 h-8 rounded-full bg-[#16161d] hover:bg-[#d4af37] text-neutral-300 hover:text-black border border-[#d4af37]/40 hover:border-transparent flex items-center justify-center transition-all"
         >
           <X className="w-4 h-4" />
         </button>
 
-        <div className="p-6 sm:p-8 relative z-10 flex flex-col items-center text-center">
+        <div className="p-4 min-[400px]:p-5 sm:p-7 relative z-10 flex flex-col items-center text-center overflow-y-auto max-h-full">
           {/* Brand Emblem */}
-          <div className="w-16 h-16 rounded-full border-2 border-[#d4af37] p-0.5 shadow-[0_0_25px_rgba(212,175,55,0.35)] mb-5 bg-black">
+          <div className="w-13 h-13 min-[400px]:w-15 min-[400px]:h-15 sm:w-16 sm:h-16 rounded-full border-2 border-[#d4af37] p-0.5 shadow-[0_0_25px_rgba(212,175,55,0.35)] mb-2.5 sm:mb-4 bg-black flex-shrink-0">
             <img
               src={BUSINESS_INFO.logoUrl}
               alt="Apex Mobile Auto Detailing promotional offer emblem"
@@ -68,7 +68,7 @@ export const PromoCouponModal: React.FC<PromoCouponModalProps> = ({
           </div>
 
           {/* Badge */}
-          <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#15151b] border border-[#d4af37]/40 text-[#d4af37] text-[11px] font-bold uppercase tracking-widest mb-3">
+          <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#15151b] border border-[#d4af37]/40 text-[#d4af37] text-[10px] min-[400px]:text-[11px] font-bold uppercase tracking-widest mb-2 sm:mb-3 flex-shrink-0">
             <Sparkles className="w-3 h-3 text-[#f5df88]" />
             <span>LIMITED TIME OFFER</span>
           </div>
@@ -79,15 +79,15 @@ export const PromoCouponModal: React.FC<PromoCouponModalProps> = ({
           {/* Subheadline */}
           <h2
             id="promo-coupon-title"
-            className="font-heading text-xs sm:text-sm font-bold text-white uppercase tracking-widest mt-1"
+            className="font-heading text-[11px] min-[400px]:text-xs sm:text-sm font-bold text-white uppercase tracking-widest mt-0.5 sm:mt-1 flex-shrink-0"
           >
             PROFESSIONAL MOBILE AUTO DETAILING
           </h2>
 
-          <div className="w-16 h-0.5 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent my-4 sm:my-5" />
+          <div className="w-16 h-0.5 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent my-3 sm:my-4 flex-shrink-0" />
 
           {/* Primary CTA & Secondary Close */}
-          <div className="w-full space-y-3">
+          <div className="w-full space-y-2.5 sm:space-y-3 flex-shrink-0">
             <button
               type="button"
               onClick={onClaimOffer}
