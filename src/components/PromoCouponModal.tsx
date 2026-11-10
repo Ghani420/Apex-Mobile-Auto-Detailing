@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { X, Sparkles, ArrowRight } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/content';
+import { AnimatedPromoCar } from './AnimatedPromoCar';
 
 interface PromoCouponModalProps {
   isOpen: boolean;
@@ -55,7 +56,7 @@ export const PromoCouponModal: React.FC<PromoCouponModalProps> = ({
           <X className="w-4 h-4" />
         </button>
 
-        <div className="p-7 sm:p-9 relative z-10 flex flex-col items-center text-center">
+        <div className="p-6 sm:p-8 relative z-10 flex flex-col items-center text-center">
           {/* Brand Emblem */}
           <div className="w-16 h-16 rounded-full border-2 border-[#d4af37] p-0.5 shadow-[0_0_25px_rgba(212,175,55,0.35)] mb-5 bg-black">
             <img
@@ -72,38 +73,18 @@ export const PromoCouponModal: React.FC<PromoCouponModalProps> = ({
             <span>LIMITED TIME OFFER</span>
           </div>
 
-          {/* Headline */}
-          <h2
-            id="promo-coupon-title"
-            className="font-heading text-5xl sm:text-6xl font-extrabold tracking-tight uppercase text-gold-gradient leading-none mt-1"
-          >
-            10% OFF
-          </h2>
-
-          {/* Discounted Price Display */}
-          <div className="mt-4 flex flex-col items-center">
-            <div className="inline-flex items-center justify-center gap-3 px-4 py-2 rounded-md bg-[#14141b] border border-[#d4af37]/35 shadow-inner">
-              <span className="font-mono text-lg sm:text-xl font-semibold text-neutral-400 line-through decoration-neutral-400/90">
-                $229
-              </span>
-              <span className="text-[#d4af37] font-bold text-base sm:text-lg" aria-hidden="true">
-                &rarr;
-              </span>
-              <span className="font-mono text-2xl sm:text-3xl font-extrabold text-gold-gradient">
-                $206.10
-              </span>
-            </div>
-            <span className="mt-1.5 text-[11px] font-semibold uppercase tracking-widest text-[#d4af37]">
-              Your Price
-            </span>
-          </div>
+          {/* Animated Luxury Black Sports Car pulling 10% OFF Banner */}
+          <AnimatedPromoCar />
 
           {/* Subheadline */}
-          <p className="font-heading text-sm sm:text-base font-bold text-white uppercase tracking-widest mt-4">
+          <h2
+            id="promo-coupon-title"
+            className="font-heading text-xs sm:text-sm font-bold text-white uppercase tracking-widest mt-1"
+          >
             PROFESSIONAL MOBILE AUTO DETAILING
-          </p>
+          </h2>
 
-          <div className="w-16 h-0.5 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent my-6" />
+          <div className="w-16 h-0.5 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent my-4 sm:my-5" />
 
           {/* Primary CTA & Secondary Close */}
           <div className="w-full space-y-3">
