@@ -1,5 +1,5 @@
 import React from 'react';
-import { Calendar, MapPin, Instagram, Mail, Shield, CheckCircle2, ChevronRight } from 'lucide-react';
+import { Calendar, Instagram, Mail, Shield, CheckCircle2, ChevronRight } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/content';
 
 const INSTAGRAM_URL = 'https://ig.me/m/apex_mobile_autodetailing';
@@ -75,16 +75,6 @@ export const BookingForm: React.FC<BookingFormProps> = ({ onBookClick }) => {
                     <a href={`mailto:${BUSINESS_INFO.email}`} className="text-white hover:text-[#d4af37] font-semibold break-all">
                       {BUSINESS_INFO.email}
                     </a>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-3 text-neutral-300">
-                  <MapPin className="w-4 h-4 text-[#d4af37] flex-shrink-0" />
-                  <div>
-                    <span className="text-neutral-400 block text-[11px]">Service Regions</span>
-                    <span className="text-white font-medium">
-                      2958 21rd Ave Street, Los Angeles, CA, USA
-                    </span>
                   </div>
                 </div>
               </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, MapPin, ShieldCheck, ArrowUp, Calendar, Instagram } from 'lucide-react';
+import { Phone, Mail, ShieldCheck, ArrowUp, Calendar, Instagram } from 'lucide-react';
 import { BUSINESS_INFO, SERVICES, PACKAGES } from '../data/content';
 
 interface FooterProps {
@@ -131,16 +131,6 @@ export const Footer: React.FC<FooterProps> = ({ onBookClick, onNavigateLegal }) 
                   </span>
                 </div>
               </a>
-
-              <div className="flex items-start gap-2.5">
-                <MapPin className="w-4 h-4 text-[#d4af37] flex-shrink-0 mt-0.5" />
-                <div>
-                  <span className="text-white block font-medium">Service Area</span>
-                  <span className="text-neutral-400 text-[11px]">
-                    2958 21rd Ave Street, Los Angeles, CA, USA
-                  </span>
-                </div>
-              </div>
             </div>
           </div>
 

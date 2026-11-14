@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { ArrowLeft, Shield, FileText, Mail, MapPin } from 'lucide-react';
+import { ArrowLeft, Shield, FileText, Mail } from 'lucide-react';
 
 interface LegalPageProps {
   page: 'terms' | 'privacy';
@@ -236,10 +236,6 @@ export const LegalPage: React.FC<LegalPageProps> = ({ page, onBackHome }) => {
                         apexmobileautodetailing07@gmail.com
                       </a>
                     </div>
-                    <div className="flex items-center gap-2 text-neutral-300">
-                      <MapPin className="w-4 h-4 text-[#d4af37] flex-shrink-0" />
-                      <span>Service Area: 2958 21rd Ave Street, Los Angeles, CA, USA</span>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -352,10 +348,6 @@ export const LegalPage: React.FC<LegalPageProps> = ({ page, onBackHome }) => {
                       >
                         apexmobileautodetailing07@gmail.com
                       </a>
-                    </div>
-                    <div className="flex items-center gap-2 text-neutral-300">
-                      <MapPin className="w-4 h-4 text-[#d4af37] flex-shrink-0" />
-                      <span>Service Area: 2958 21rd Ave Street, Los Angeles, CA, USA</span>
                     </div>
                   </div>
                 </div>
